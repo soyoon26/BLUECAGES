@@ -12,6 +12,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sinbi: ["SangSangShinb7", "sans-serif"],
+      },
     },
   },
   plugins: [],
