@@ -27,3 +27,8 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+body {
+  background-color: black;
+  color: white;
+}

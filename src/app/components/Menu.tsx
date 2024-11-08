@@ -22,9 +22,9 @@ const menuItems: MenuItem[] = [
 
 const Menu: React.FC = () => {
   return (
-    <div className="mt-10 font-sinbi">
+    <div className="mt-10 w-screen font-sinbi flex items-center flex-col ">
       <Image src={bluecages} alt="블루케이지" width={500} />
-      <section className="flex  border-2 rounded-lg px-4 p-2  border-white items-center gap-10 border-r-red-400">
+      <section className="flex mt-10  w-5/6 border-2 rounded-lg px-4   border-white items-center justify-around border-r-red-400">
         {menuItems.map((item, index) => (
           <article key={index}>
             <a
