@@ -3,22 +3,21 @@ import React, { useState } from "react";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
 import Image, { StaticImageData } from "next/image"; // StaticImageData import 추가
 
-// Video 인터페이스 정의
 interface Video {
   id: number;
-  src: StaticImageData | string; // src 타입을 StaticImageData | string으로 설정
+  src: StaticImageData | string;
   alt: string;
   title: string;
+  youtuber_src: StaticImageData | string;
+  youtuber: string;
   content: string;
   videoUrl: string;
 }
 
-// VideoItemProps 인터페이스 정의
 interface VideoItemProps {
   video: Video;
 }
 
-// React.FC<VideoItemProps>로 VideoItem 컴포넌트 정의
 const VideoItem: React.FC<VideoItemProps> = ({ video }) => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -30,14 +29,24 @@ const VideoItem: React.FC<VideoItemProps> = ({ video }) => {
     <div>
       <section
         onClick={toggleVisibility}
-        className="cursor-pointer p-4 text-center flex justify-between items-center gap-10"
+        className="cursor-pointer p-4 text-center flex justify-between  gap-10"
       >
-        <Image src={video.src} alt={video.alt} width={300} />{" "}
-        {/* 타입이 맞지 않는 경우, src의 타입을 StaticImageData | string으로 설정 */}
+        <Image src={video.src} alt={video.alt} width={300} />
         <div className="flex justify-between w-full">
           <article>
-            <p>{video.title}</p>
-            <p>{video.content}</p>
+            <div className="mb-4 mt-2">
+              <p className="flex text-lg">{video.title}</p>
+              <p className="flex text-gray-400">{video.content}</p>
+            </div>
+            <div className="flex text-gray-400 items-center gap-3">
+              <Image
+                src={video.youtuber_src}
+                alt={video.youtuber}
+                width={30}
+                style={{ borderRadius: "50%" }}
+              />
+              <p>{video.youtuber}</p>
+            </div>
           </article>
           {isVisible ? (
             <ChevronUpIcon className="w-6 h-6" />

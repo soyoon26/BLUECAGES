@@ -1,4 +1,3 @@
-// src/components/filmography/MV.tsx
 "use client";
 
 import React from "react";
@@ -7,7 +6,6 @@ import mv1 from "../../../../public/옥탑방에서.png";
 import mv2 from "../../../../public/태연뮤비.png";
 import mv3 from "../../../../public/내일의우리.png";
 
-// MV 컴포넌트 내부에 videoData를 정의
 const videoData = [
   {
     id: 1,
