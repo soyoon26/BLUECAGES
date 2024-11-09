@@ -6,6 +6,7 @@ import {
   RadioIcon,
   TvIcon,
   GiftTopIcon,
+  MegaphoneIcon,
 } from "@heroicons/react/24/outline";
 import useCategoryStore from "../../../store/categoryStore";
 
@@ -16,6 +17,7 @@ const icons = [
   { name: "라디오", icon: RadioIcon },
   { name: "화보", icon: CameraIcon },
   { name: "예능", icon: GiftTopIcon },
+  { name: "광고", icon: MegaphoneIcon },
 ];
 
 const Category = () => {
