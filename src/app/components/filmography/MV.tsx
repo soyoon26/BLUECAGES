@@ -43,7 +43,7 @@ const MV = () => {
   };
 
   return (
-    <div>
+    <div className="w-full">
       {videoData.map((video) => (
         <div key={video.id}>
           <section
