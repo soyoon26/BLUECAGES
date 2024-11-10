@@ -18,7 +18,7 @@ const videoData = [
     youtuber_src: KBS,
     youtuber: "KBS CoolFM",
     content: "2020년 7월 9일",
-    videoUrl: "https://www.youtube.com/embed/9Xloi_pHaw4",
+    videoUrls: ["https://www.youtube.com/embed/9Xloi_pHaw4"],
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const videoData = [
     youtuber_src: SBS,
     youtuber: "SBS Radio 에라오",
     content: "2022년 11월 16일",
-    videoUrl: "https://www.youtube.com/embed/1gvPVMGzYLM",
+    videoUrls: ["https://www.youtube.com/embed/1gvPVMGzYLM"],
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const videoData = [
     youtuber_src: SBS,
     youtuber: "SBS Radio 에라오",
     content: "2023년 6월 23일",
-    videoUrl: "https://www.youtube.com/embed/ZyRN1K-6Ck8",
+    videoUrls: ["https://www.youtube.com/embed/ZyRN1K-6Ck8"],
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ const videoData = [
     youtuber_src: SBS,
     youtuber: "SBS Radio 에라오",
     content: "2024년 3월 27일",
-    videoUrl: "https://www.youtube.com/embed/z0SKuTMVOuI",
+    videoUrls: ["https://www.youtube.com/embed/z0SKuTMVOuI"],
   },
 ];
 

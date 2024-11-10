@@ -4,6 +4,9 @@ import bluecages from "../../../public/bluecages.png";
 import greenpuzzle from "../../../public/greenpuzzle.png";
 import heart from "../../../public/heart.png";
 import firework from "../../../public/firework.png";
+import cherry from "../../../public/cherry.png";
+import luck from "../../../public/luck.png";
+import fish from "../../../public/fish.png";
 import mars from "../../../public/mars.png";
 
 type MenuItem = {
@@ -18,6 +21,8 @@ const menuItems: MenuItem[] = [
   { src: mars, alt: "마스", text: "필모그래피", href: "/filmography" },
   { src: heart, alt: "하트", text: "좋아하는", href: "/favourites" },
   { src: firework, alt: "불꽃놀이", text: "기타..", href: "/others" },
+  { src: fish, alt: "금붕어", text: "기타..", href: "/others" },
+  { src: luck, alt: "네잎클로버", text: "해시태그", href: "/others" },
 ];
 
 const Menu: React.FC = () => {

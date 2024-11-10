@@ -1,7 +1,7 @@
 // src/components/common/VideoItem.tsx
 import React, { useState } from "react";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
-import Image, { StaticImageData } from "next/image"; // StaticImageData import 추가
+import Image, { StaticImageData } from "next/image";
 
 interface Video {
   id: number;
@@ -11,7 +11,7 @@ interface Video {
   youtuber_src: StaticImageData | string;
   youtuber: string;
   content: string;
-  videoUrl: string;
+  videoUrls?: string[]; // 비디오 URL 배열 추가, 선택적 속성
 }
 
 interface VideoItemProps {
@@ -29,7 +29,7 @@ const VideoItem: React.FC<VideoItemProps> = ({ video }) => {
     <div>
       <section
         onClick={toggleVisibility}
-        className="cursor-pointer p-4 text-center flex justify-between  gap-10"
+        className="cursor-pointer p-4 text-center flex justify-between gap-10"
       >
         <Image src={video.src} alt={video.alt} width={300} />
         <div className="flex justify-between w-full">
@@ -55,17 +55,21 @@ const VideoItem: React.FC<VideoItemProps> = ({ video }) => {
           )}
         </div>
       </section>
-      {isVisible && (
-        <div className="video-container flex justify-center mt-4">
-          <iframe
-            width="1000"
-            height="515"
-            src={video.videoUrl}
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+      {isVisible && video.videoUrls && video.videoUrls.length > 0 && (
+        <div className="video-container bg-gray-900 rounded-b-lg flex flex-col items-center mt-4">
+          {video.videoUrls.map((url, index) => (
+            <iframe
+              key={index}
+              width="1000"
+              height="515"
+              src={url}
+              title={`YouTube video player ${index + 1}`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="mb-4"
+            ></iframe>
+          ))}
         </div>
       )}
     </div>

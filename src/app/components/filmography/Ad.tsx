@@ -21,7 +21,7 @@ const videoData = [
     youtuber_src: 스니커즈,
     youtuber: "snickersenergy",
     content: "2013년",
-    videoUrl: "https://www.youtube.com/embed/3J4xvXMQgC8",
+    videoUrls: ["https://www.youtube.com/embed/3J4xvXMQgC8"],
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const videoData = [
     youtuber_src: LG,
     youtuber: "LG Uplus",
     content: "2016년",
-    videoUrl: "https://www.youtube.com/embed/_x0Ah894n98",
+    videoUrls: ["https://www.youtube.com/embed/_x0Ah894n98"],
   },
   {
     id: 3,
@@ -40,8 +40,8 @@ const videoData = [
     title: "[데상트]𝗟𝗜𝗩𝗘 𝗢𝗡 𝗧𝗛𝗘 𝗘𝗗𝗚𝗘, 𝗘𝗗𝗚𝗘 𝗖𝗢𝗨𝗥𝗧_배우 홍경",
     youtuber_src: 데상트,
     youtuber: "데상트 DESCENTE",
-    content: "2024년",
-    videoUrl: "https://www.youtube.com/embed/PBOM_SAtPcs",
+    content: "2024년 1월 26일",
+    videoUrls: ["https://www.youtube.com/embed/PBOM_SAtPcs"],
   },
   {
     id: 4,
@@ -51,8 +51,18 @@ const videoData = [
       "[Sony Audio] 책상에 앉았더니 초능력이 생겼다 Full ver. - 스터디헤드폰 WH-1000XM5",
     youtuber_src: 소니,
     youtuber: "Sony Korea",
-    content: "2024년",
-    videoUrl: "https://www.youtube.com/embed/2DWSSu3wdBw",
+    content: "2024년 4월 29일",
+    videoUrls: ["https://www.youtube.com/embed/2DWSSu3wdBw"],
+  },
+  {
+    id: 3,
+    src: mv3,
+    alt: "mv3",
+    title: "[데상트]𝗟𝗜𝗩𝗘 𝗢𝗡 𝗧𝗛𝗘 𝗘𝗗𝗚𝗘, 𝗘𝗗𝗚𝗘 𝗖𝗢𝗨𝗥𝗧_배우 홍경",
+    youtuber_src: 데상트,
+    youtuber: "데상트 DESCENTE",
+    content: "2024년 6월 20일",
+    videoUrls: ["https://www.youtube.com/embed/PBOM_SAtPcs"],
   },
   {
     id: 5,
@@ -61,9 +71,10 @@ const videoData = [
     title: "[맥심 T.O.P] Maxim T.O.P '가장 가까운 휴식' 직장인 편",
     youtuber_src: 맥심,
     youtuber: "커피라는 행복 맥심",
-    content: "2024년",
-    videoUrl: "https://www.youtube.com/embed/pM0N6EdwAqg",
+    content: "2024년 8월 9일",
+    videoUrls: ["https://www.youtube.com/embed/pM0N6EdwAqg"],
   },
+
   {
     id: 6,
     src: mv3,
@@ -72,7 +83,7 @@ const videoData = [
     youtuber_src: 어나더오피스,
     youtuber: "Another Office Official",
     content: "2024년",
-    videoUrl: "https://www.youtube.com/embed/PnD77dXt3a8",
+    videoUrls: ["https://www.youtube.com/embed/PnD77dXt3a8"],
   },
 ];
 
