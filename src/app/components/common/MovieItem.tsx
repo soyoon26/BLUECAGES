@@ -32,12 +32,11 @@ const MovieItem: React.FC<{ movie: MovieInfo }> = ({ movie }) => {
     setIsTrailerVisible(!isTrailerVisible);
   };
 
+  const hasTrailers = movie.trailers && movie.trailers.length > 0;
+
   return (
     <div className="movie-item border-b p-4">
-      <section
-        onClick={toggleTrailerVisibility}
-        className="cursor-pointer p-4 text-center flex justify-between  gap-10"
-      >
+      <section className=" p-4 text-center flex justify-between gap-10">
         <Image src={movie.poster} alt={movie.title} width={200} />
         <div className="w-full text-left">
           <div className="flex justify-between">
@@ -65,14 +64,24 @@ const MovieItem: React.FC<{ movie: MovieInfo }> = ({ movie }) => {
           <p className="text-gray-500">감독: {movie.director}</p>
           <p className="text-gray-500">장르 : {movie.genre}</p>
         </div>
-        {isTrailerVisible ? (
-          <ChevronUpIcon className="w-6 h-6" />
-        ) : (
-          <ChevronDownIcon className="w-6 h-6" />
+
+        {hasTrailers && (
+          <div
+            className="flex justify-center cursor-pointer"
+            onClick={toggleTrailerVisibility}
+          >
+            {isTrailerVisible ? (
+              <ChevronUpIcon className="w-6 h-6" />
+            ) : (
+              <ChevronDownIcon className="w-6 h-6" />
+            )}
+          </div>
         )}
       </section>
 
-      {isTrailerVisible && <TrailerList trailers={movie.trailers} />}
+      {isTrailerVisible && hasTrailers && (
+        <TrailerList trailers={movie.trailers} />
+      )}
     </div>
   );
 };

@@ -10,6 +10,7 @@ import 정말먼곳 from "../../../../public/정말먼곳p.webp";
 import 청설 from "../../../../public/청설p.webp";
 import 결백 from "../../../../public/결백p.webp";
 import 보이스 from "../../../../public/보이스p.webp";
+import 공개예정 from "../../../../public/공개예정.png";
 
 const moviesData = [
   {
@@ -165,69 +166,42 @@ const moviesData = [
   },
   {
     id: 6,
-    poster: 청설,
+    poster: 공개예정,
     title: "미쉘",
     content:
       "손으로 설렘을 말하고 가슴으로 사랑을 느끼는, 청량한 설렘의 순간 대학생활은 끝났지만...",
     cast: "홍경, 노윤서, 김민주",
     director: "박세영",
     genre: "드라마, 멜로/로맨스",
-    category: "공개예정",
+    category: ["주연작", "공개예정"],
     platforms: [],
-    trailers: [
-      {
-        url: "https://www.youtube.com/embed/5yUHkmPMY2A",
-        title: "티저 예고편",
-      },
-      {
-        url: "https://www.youtube.com/embed/mGhUIExGY4Y",
-        title: "메인 예고편",
-      },
-    ],
+    trailers: [],
   },
   {
     id: 7,
-    poster: 청설,
+    poster: 공개예정,
     title: "이 별에 필요한",
     content:
       "우주인 난영과 뮤지션 제이의 세상에서 가장 먼 거리의 롱디 로맨스를 그린 애니메이션 영화",
     cast: "홍경, 김태리",
     director: "한지원",
     genre: "애니메이션, 로맨스",
-    category: "공개예정",
+    category: ["주연작", "공개예정"],
     platforms: [{ src: netflixIcon, link: "https://www.netflix.com" }],
-    trailers: [
-      {
-        url: "https://www.youtube.com/embed/5yUHkmPMY2A",
-        title: "티저 예고편",
-      },
-      {
-        url: "https://www.youtube.com/embed/mGhUIExGY4Y",
-        title: "메인 예고편",
-      },
-    ],
+    trailers: [],
   },
   {
     id: 8,
-    poster: 청설,
+    poster: 공개예정,
     title: "굿뉴스",
     content: "",
 
     cast: "홍경, 노윤서, 김민주",
     director: "조선호",
     genre: "드라마, 멜로/로맨스",
-    category: "공개예정",
+    category: ["주연작", "공개예정"],
     platforms: [],
-    trailers: [
-      {
-        url: "https://www.youtube.com/embed/5yUHkmPMY2A",
-        title: "티저 예고편",
-      },
-      {
-        url: "https://www.youtube.com/embed/mGhUIExGY4Y",
-        title: "메인 예고편",
-      },
-    ],
+    trailers: [],
   },
 ];
 
