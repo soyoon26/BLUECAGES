@@ -6,6 +6,7 @@ import radio1 from "../../../../public/이금희.png";
 import radio2 from "../../../../public/약한영웅.png";
 import radio3 from "../../../../public/악귀.png";
 import radio4 from "../../../../public/댓글부대.png";
+import radio5 from "../../../../public/청설.png";
 import SBS from "../../../../public/SBS.jpg";
 import KBS from "../../../../public/KBS.jpg";
 
@@ -49,6 +50,16 @@ const videoData = [
     youtuber: "SBS Radio 에라오",
     content: "2024년 3월 27일",
     videoUrls: ["https://www.youtube.com/embed/z0SKuTMVOuI"],
+  },
+  {
+    id: 5,
+    src: radio5,
+    alt: "radio5",
+    title: "박하선의 씨네타운",
+    youtuber_src: SBS,
+    youtuber: "SBS Radio 에라오",
+    content: "2024년 11월 6일",
+    videoUrls: ["https://www.youtube.com/embed/HR-aYOjW-3Y"],
   },
 ];
 
