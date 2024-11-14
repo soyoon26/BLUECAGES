@@ -2,61 +2,55 @@
 
 import React from "react";
 import VideoItem from "../common/VideoItem";
-import radio1 from "../../../../public/이금희.png";
-import radio2 from "../../../../public/약한영웅.png";
-import radio3 from "../../../../public/악귀.png";
-import radio4 from "../../../../public/댓글부대.png";
-import radio5 from "../../../../public/청설.png";
-import SBS from "../../../../public/SBS.jpg";
-import KBS from "../../../../public/KBS.jpg";
+import images from "@/app/assets/images";
 
 const videoData = [
   {
     id: 1,
-    src: radio1,
+    src: images.radio1,
     alt: "radio1",
     title: "사랑하기 좋은날 이금희입니다",
-    youtuber_src: KBS,
+    youtuber_src: images.KBS,
     youtuber: "KBS CoolFM",
     content: "2020년 7월 9일",
     videoUrls: ["https://www.youtube.com/embed/9Xloi_pHaw4"],
   },
   {
     id: 2,
-    src: radio2,
+    src: images.radio2,
     alt: "radio2",
     title: "박하선의 씨네타운",
-    youtuber_src: SBS,
+    youtuber_src: images.SBS,
     youtuber: "SBS Radio 에라오",
     content: "2022년 11월 16일",
     videoUrls: ["https://www.youtube.com/embed/1gvPVMGzYLM"],
   },
   {
     id: 3,
-    src: radio3,
+    src: images.radio3,
     alt: "radio3",
     title: "최화정의 파워타임",
-    youtuber_src: SBS,
+    youtuber_src: images.SBS,
     youtuber: "SBS Radio 에라오",
     content: "2023년 6월 23일",
     videoUrls: ["https://www.youtube.com/embed/ZyRN1K-6Ck8"],
   },
   {
     id: 4,
-    src: radio4,
+    src: images.radio4,
     alt: "radio4",
     title: "박하선의 씨네타운",
-    youtuber_src: SBS,
+    youtuber_src: images.SBS,
     youtuber: "SBS Radio 에라오",
     content: "2024년 3월 27일",
     videoUrls: ["https://www.youtube.com/embed/z0SKuTMVOuI"],
   },
   {
     id: 5,
-    src: radio5,
+    src: images.radio5,
     alt: "radio5",
     title: "박하선의 씨네타운",
-    youtuber_src: SBS,
+    youtuber_src: images.SBS,
     youtuber: "SBS Radio 에라오",
     content: "2024년 11월 6일",
     videoUrls: ["https://www.youtube.com/embed/HR-aYOjW-3Y"],

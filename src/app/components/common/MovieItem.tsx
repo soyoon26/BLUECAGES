@@ -37,7 +37,7 @@ const MovieItem: React.FC<{ movie: MovieInfo }> = ({ movie }) => {
   return (
     <div className="movie-item border-b p-4">
       <section className=" p-4 text-center flex justify-between gap-10">
-        <Image src={movie.poster} alt={movie.title} width={200} />
+        <Image src={movie.poster} alt={movie.title} width={200} height={450} />
         <div className="w-full text-left">
           <div className="flex justify-between">
             <h2 className="text-3xl font-bold ">{movie.title}</h2>
@@ -53,6 +53,7 @@ const MovieItem: React.FC<{ movie: MovieInfo }> = ({ movie }) => {
                     src={platform.src}
                     alt="Platform icon"
                     height={30}
+                    width={30}
                     className="rounded"
                   />
                 </a>

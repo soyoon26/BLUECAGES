@@ -11,7 +11,7 @@ interface Video {
   youtuber_src: StaticImageData | string;
   youtuber: string;
   content: string;
-  videoUrls?: string[]; // 비디오 URL 배열 추가, 선택적 속성
+  videoUrls?: string[];
 }
 
 interface VideoItemProps {
@@ -31,7 +31,7 @@ const VideoItem: React.FC<VideoItemProps> = ({ video }) => {
         onClick={toggleVisibility}
         className="cursor-pointer p-4 text-center flex justify-between gap-10"
       >
-        <Image src={video.src} alt={video.alt} width={300} />
+        <Image src={video.src} alt={video.alt} width={300} height={150} />
         <div className="flex justify-between w-full">
           <article>
             <div className="mb-4 mt-2">
@@ -43,6 +43,7 @@ const VideoItem: React.FC<VideoItemProps> = ({ video }) => {
                 src={video.youtuber_src}
                 alt={video.youtuber}
                 width={30}
+                height={30}
                 style={{ borderRadius: "50%" }}
               />
               <p>{video.youtuber}</p>

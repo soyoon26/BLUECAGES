@@ -5,12 +5,7 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-import profilecut from "../../../../public/profilecut.webp";
-import profilecut2 from "../../../../public/profilecut2.webp";
-// import profilecut3 from "../../../../public/profilecut3.webp";
-import profilecut4 from "../../../../public/profilecut4.webp";
-
+import images from "@/app/assets/images";
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const ProfileImage = () => {
@@ -22,16 +17,15 @@ const ProfileImage = () => {
     slidesToScroll: 1,
   };
 
-  const images = [
-    { src: profilecut, alt: "Profile" },
-    { src: profilecut2, alt: "Profile2" },
-    // { src: profilecut3, alt: "Profile3" },
-    { src: profilecut4, alt: "Profile4" },
+  const profileImages = [
+    { src: images.profilecut, alt: "Profile" },
+    { src: images.profilecut2, alt: "Profile2" },
+    { src: images.profilecut4, alt: "Profile4" },
   ];
 
   return (
     <Slider {...settings} className="w-[480px]">
-      {images.map((image, index) => (
+      {profileImages.map((image, index) => (
         <div key={index}>
           <Image
             src={image.src}
