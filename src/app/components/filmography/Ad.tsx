@@ -47,7 +47,7 @@ const videoData = [
     videoUrls: ["https://www.youtube.com/embed/2DWSSu3wdBw"],
   },
   {
-    id: 3,
+    id: 5,
     src: images.mv3,
     alt: "mv3",
     title: "[데상트]𝗟𝗜𝗩𝗘 𝗢𝗡 𝗧𝗛𝗘 𝗘𝗗𝗚𝗘, 𝗘𝗗𝗚𝗘 𝗖𝗢𝗨𝗥𝗧_배우 홍경",
@@ -57,7 +57,7 @@ const videoData = [
     videoUrls: ["https://www.youtube.com/embed/PBOM_SAtPcs"],
   },
   {
-    id: 5,
+    id: 6,
     src: images.mv3,
     alt: "mv3",
     title: "[맥심 T.O.P] Maxim T.O.P '가장 가까운 휴식' 직장인 편",
@@ -68,7 +68,7 @@ const videoData = [
   },
 
   {
-    id: 6,
+    id: 7,
     src: images.mv3,
     alt: "mv3",
     title: "[어나더오피스] GQ 10월호 홍경 화보 메이킹 필름",

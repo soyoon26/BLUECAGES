@@ -7,9 +7,28 @@ import Category from "../components/common/Category";
 import useCategoryStore from "../../store/categoryStore";
 import Ad from "../components/filmography/Ad";
 import Radio from "../components/filmography/Radio";
+import {
+  CameraIcon,
+  FilmIcon,
+  GiftTopIcon,
+  MegaphoneIcon,
+  RadioIcon,
+  TvIcon,
+  VideoCameraIcon,
+} from "@heroicons/react/24/outline";
 
 const Page = () => {
   const { selectedCategory } = useCategoryStore();
+
+  const categories = [
+    { name: "영화", icon: FilmIcon },
+    { name: "드라마", icon: TvIcon },
+    { name: "MV", icon: VideoCameraIcon },
+    { name: "라디오", icon: RadioIcon },
+    { name: "화보", icon: CameraIcon },
+    { name: "예능", icon: GiftTopIcon },
+    { name: "광고", icon: MegaphoneIcon },
+  ];
 
   const renderSelectedComponent = () => {
     switch (selectedCategory) {
@@ -28,7 +47,7 @@ const Page = () => {
 
   return (
     <div className="flex">
-      <Category />
+      <Category categories={categories} />
       <div className="flex-grow">{renderSelectedComponent()}</div>
     </div>
   );

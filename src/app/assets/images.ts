@@ -33,10 +33,10 @@ export default {
   SM: "/mv/SMTOWN.jpg",
   카더가든: "/mv/카더가든.jpg",
   //ad
-  스니커즈: "ad//스니커즈.jpg",
-  LG: "ad//LG.jpg",
-  데상트: "ad//데상트.jpg",
-  소니: "ad//SONY.jpg",
-  맥심: "ad//맥심.jpg",
-  어나더오피스: "ad//어나더오피스.jpg",
+  스니커즈: "/ad/스니커즈.jpg",
+  LG: "/ad/LG.jpg",
+  데상트: "/ad/데상트.jpg",
+  소니: "/ad/SONY.jpg",
+  맥심: "/ad/맥심.jpg",
+  어나더오피스: "/ad/어나더오피스.jpg",
 };
