@@ -15,7 +15,7 @@ const moviesData = [
   },
   {
     id: 2,
-    poster: images.펀치드렁크러브,
+    poster: images.펀치드링크러브,
     title: "펀치 드렁크 러브",
     content: "",
     cast: "",
@@ -111,7 +111,7 @@ const moviesData = [
   },
   {
     id: 10,
-    poster: images.더킹헨리5세,
+    poster: images.더킹,
     title: "더 킹: 헨리 5세",
     content: "",
     cast: "",
@@ -135,8 +135,8 @@ const moviesData = [
   },
   {
     id: 12,
-    poster: images.폭스캐쳐,
-    title: "폭스 캐쳐",
+    poster: images.폭스캐처,
+    title: "폭스 캐처",
     content: "",
     cast: "",
     director: "베넷 밀러",
@@ -351,7 +351,7 @@ const moviesData = [
   },
   {
     id: 30,
-    poster: images.아이라킬드마이마더,
+    poster: images.아이킬드마이마더,
     title: "아이 킬드 마이 마더",
     content: "",
     cast: "",
@@ -423,8 +423,8 @@ const moviesData = [
   },
   {
     id: 36,
-    poster: images.나의원발,
-    title: "나의 원발",
+    poster: images.나의왼발,
+    title: "나의 왼발",
     content: "",
     cast: "",
     director: "짐 쉐리단",
