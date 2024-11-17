@@ -6,6 +6,8 @@ export default {
 
   // 영화
   넷플릭스: "/icons/netflix.jpg",
+  유튜브: "/icons/유튜브.jpg",
+  티빙: "/icons/티빙.png",
   왓챠: "/icons/watcha.webp",
   웨이브: "/icons/wavve.png",
   시리즈온: "/icons/시리즈온.png",
@@ -39,7 +41,7 @@ export default {
   소니: "/ad/SONY.jpg",
   맥심: "/ad/맥심.jpg",
   어나더오피스: "/ad/어나더오피스.jpg",
-  //좋아하는영화
+
   // 좋아하는 영화
   굿타임: "/favourites_movie/굿타임.jpg",
   나의아름다운세탁소: "/favourites_movie/나의아름다운세탁소.jpg",
