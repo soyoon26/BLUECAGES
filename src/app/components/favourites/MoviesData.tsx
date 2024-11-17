@@ -579,8 +579,8 @@ const moviesData = [
     ],
     trailers: [
       {
-        url: "https://www.youtube.com/embed/",
-        title: "예고편",
+        url: "https://www.youtube.com/embed/sdnx1I_R0Ig",
+        title: "메인 예고편",
       },
     ],
   },
@@ -588,50 +588,88 @@ const moviesData = [
     id: 24,
     poster: images.네멋대로해라,
     title: "네 멋대로 해라",
-    content: "",
-    cast: "",
+    content:
+      "영화 속의 갱으로 등장하는 험프리 보가트를 선망하는 좀도둑 미셸 푸가드는 차를 훔쳐 달리다가 자신도 의식할 새 없이 총으로 경관을 죽이고 쫓기는 몸이 되어 버린다. 그러던 중 어느 모델의 지갑을 훔치다가 니스에서 만난 적이 있는 미국에서 유학 온 패트리샤와 재회하게 되고, 그녀에게 함께 도망 갈 것을 제의한다. 그녀의 작은 아파트에서 며칠 밤을 함께 지내면서 그들은 책에 대해, 죽음에 대해 이야기를 나누며 즐거운 시간을 보낸다. 그리고 절도, 강도 행각을 벌이면서 그녀에게 정중하고, 삶과 죽음에 대해 두려워하지 않는 그에게 패트리샤도 매력을 느낀다. 하지만 패트리샤는 자신이 미셸을 사랑하는지 확신할 수가 없다. 그의 아이를 임신했지만 결국 그를 사랑하지 않다고 생각하게 된 패트리샤는 수배범인 그를 경찰에 신고한다. 하지만 미쏄은 두렵지 않다고 말하면서 그대로 머문다. 하지만 결국 미셸은 거리에서 경찰의 총에 쓰러진다. 그를 둘러싼 사람들 가운데에서 파트리시아를 알아 본 그는 죽어가면서 무표정하게 그녀에게 욕을 하지만 그녀는 알아듣지 못하고서는 험프리 보가트가 그랬듯이 죽은 그의 아랫 입술에 손가락을 문지른다.",
+    cast: "장 폴 벨몽도, 진 세버그, 다니엘 보랭거, 장 피에르 멜빌, 반 두드",
     director: "장 뤽 고다르",
-    genre: "",
+    genre: "범죄, 드라마",
     category: ["공개예정"],
     platforms: [],
     trailers: [
       {
-        url: "https://www.youtube.com/embed/",
-        title: "예고편",
+        url: "https://www.youtube.com/embed/-dndE8EGXIg",
+        title:
+          "Masterpiece Collection-Breathless, À bout de souffle ,명작 명장면-네 멋대로 해라",
+      },
+      {
+        url: "https://www.youtube.com/embed/ABn7uHGPL8k",
+        title: "반영화입문 | 장뤽 고다르 감독, 네 멋대로 해라 | 점프컷",
       },
     ],
   },
   {
     id: 25,
     poster: images.몽상가들,
-    title: "몽상가들",
-    content: "",
-    cast: "",
+    title: "몽상가들 19",
+    content:
+      "자유를 외치는 젊은이들의 뜨거운 열기로 가득한 1968년 파리, 영화광인 미국인 유학생 매튜(마이클 피트)는 시네마테크에서 쌍둥이 남매 이사벨(에바 그린)과 테오(루이 가렐)를 만나 가까워진다. 부모가 휴가를 떠난 이사벨과 테오의 집에서 한 달 간 지내게 된 매튜는 영화와 음악, 책, 혁명 등의 이야기를 자유롭게 나누며 특별한 추억을 쌓는다. 자연스레 이사벨에게 사랑을 느끼게 되는 매튜, 하지만 이사벨은 테오와 떨어지려 하지 않고 세 사람의 은밀하고 특별한 관계는 계속되는데...",
+    cast: "마이클 피트, 에바 그린, 루이 가렐, 알렉산드라 칵프르작, 앙리 랑글루아",
     director: "베르나르도 베르톨루치",
-    genre: "",
+    genre: "드라마, 로맨스",
     category: ["공개예정"],
-    platforms: [],
+    platforms: [
+      {
+        src: images.왓챠,
+        link: "https://watcha.com/contents/mAOla9d",
+      },
+      {
+        src: images.유튜브,
+        link: "https://www.youtube.com/watch?v=Bb3JmmvIOcs",
+      },
+    ],
     trailers: [
       {
-        url: "https://www.youtube.com/embed/",
-        title: "예고편",
+        url: "https://www.youtube.com/embed/YU1brBVMBkM",
+        title: "The Dreamers Trailer",
+      },
+      {
+        url: "https://www.youtube.com/embed/D9dfoegfQQI",
+        title: "30초 예고편",
       },
     ],
   },
   {
     id: 26,
     poster: images.어느멋진아침,
-    title: "어느 멋진 아침",
-    content: "",
-    cast: "",
-    director: "미아 한센-러브",
-    genre: "",
+    title: "어느 멋진 아침 15",
+    content:
+      "여덟 살 난 딸, 투병 중인 아버지와 파리의 매일을 살아가고 있는 산드라는 어느 날 오랜 친구 클레망을 만나 새로운 사랑을 시작한다. 일과 가족, 사랑 사이에서 삶은 계속되고 때로는 눈물이 왈칵 쏟아지려 하지만 아침은 여느 때와 같이 찬란하게 찾아온다.",
+    cast: "레아 세두, 파스칼 그레고리, 멜빌 푸포, 니콜 가르시아, 카밀 르방 마르탱",
+    director: "미아 한센 러브",
+    genre: "로맨스, 드라마",
     category: ["공개예정"],
-    platforms: [],
+    platforms: [
+      {
+        src: images.왓챠,
+        link: "https://watcha.com/contents/mWq1yLr",
+      },
+      {
+        src: images.웨이브,
+        link: "https://www.wavve.com/player/movie?movieid=MV_C901_SG0000157787",
+      },
+      {
+        src: images.티빙,
+        link: "https://www.tving.com/contents/M000375839",
+      },
+    ],
     trailers: [
       {
-        url: "https://www.youtube.com/embed/",
-        title: "예고편",
+        url: "https://www.youtube.com/embed/vpYqrtkTlig",
+        title: "메인 예고편",
+      },
+      {
+        url: "https://www.youtube.com/embed/SFkW3DZg990",
+        title: "30초 예고편",
       },
     ],
   },
@@ -639,67 +677,102 @@ const moviesData = [
     id: 27,
     poster: images.로렌스애니웨이,
     title: "로렌스 애니웨이",
-    content: "",
-    cast: "",
+    content:
+      "몬트리올에서 소설을 쓰는 청년 로렌스와 그의 정열적인 피앙세 프레드는 미래를 약속한 사이. 서른 번째 생일을 맞이한 어느 날, 로렌스는 사랑하는 프레드에게 그 동안 숨겨왔던 비밀을 고백한다. 남은 일생을 여자로 살고 싶다고... 절망의 끝에서도 차마 ‘이 사랑’을 놓지 못하는 두 사람. 이들은 다시, 사랑할 수 있을까?",
+    cast: "멜빌 푸포, 수잔 클레망, 나탈리 베이, 모니아 쇼크리, 수잔 알그렌",
     director: "자비에 돌란",
-    genre: "",
+    genre: "드라마, 로맨스",
     category: ["공개예정"],
-    platforms: [],
+    platforms: [
+      {
+        src: images.왓챠,
+        link: "https://watcha.com/contents/mWL603d",
+      },
+    ],
     trailers: [
       {
-        url: "https://www.youtube.com/embed/",
-        title: "예고편",
+        url: "https://www.youtube.com/embed/BLY6BQNHODc",
+        title: "메인 예고편",
+      },
+      {
+        url: "https://www.youtube.com/embed/Lrz6IzRqeXk",
+        title: "티저 예고편",
       },
     ],
   },
   {
     id: 28,
     poster: images.탐엣더팜,
-    title: "탐엣더팜",
-    content: "",
-    cast: "",
+    title: "탐엣더팜 15",
+    content:
+      "연인 기욤을 잃은 탐은 장례식에 참석하기 위해 그의 고향인 퀘벡의 작은 농장을 찾아간다. 그러나, 탐은 기욤의 어머니 아가테와 형 프랑시스에게 자신이 기욤의 연인이었다는 사실을 밝히지 못한다.",
+    cast: "자비에 돌란, 피에르-이브 카디날, 리즈 로이, 에블린 브로슈, 마누엘 타드로스, 자크 라발리, 안느 카론, 올리비에 모린, 케일럽 랜드리 존스",
     director: "자비에 돌란",
-    genre: "",
+    genre: "드라마, 미스터리, 스릴러",
     category: ["공개예정"],
-    platforms: [],
+    platforms: [
+      {
+        src: images.왓챠,
+        link: "https://watcha.com/contents/mWyJxKx",
+      },
+    ],
     trailers: [
       {
-        url: "https://www.youtube.com/embed/",
-        title: "예고편",
+        url: "https://www.youtube.com/embed/1yUDJDmFuuQ",
+        title: "티저 예고편",
       },
     ],
   },
   {
     id: 29,
     poster: images.엘리펀트송,
-    title: "엘리펀트 송",
-    content: "",
-    cast: "",
+    title: "엘리펀트 송 15",
+    content:
+      "한 정신분석의가 정신장애가 있는 환자에게 동료의 실종에 관한 질문을 던지는데, 그는 이 환자의 복잡한 설명에 빨려 들어간다. <로렌스 애니웨이>의 감독이자 배우인 자비에 돌란이 정신병 환자를 연기한다.",
+    cast: "자비에 돌란, 브루스 그린우드, 캐리 앤 모스, 기 나동, 콤 피오레",
     director: "찰스 비나메",
-    genre: "",
+    genre: "드라마",
     category: ["공개예정"],
     platforms: [],
     trailers: [
       {
-        url: "https://www.youtube.com/embed/",
-        title: "예고편",
+        url: "https://www.youtube.com/embed/CXKwyEVPIdg",
+        title: "메인 예고편",
+      },
+      {
+        url: "https://www.youtube.com/embed/YMHsl1pM7bA",
+        title: "배우, 자비에 돌란 BEST MOMENT",
+      },
+      {
+        url: "https://www.youtube.com/embed/SMYa_BQRT8A",
+        title: "엘리펀트 송 자비에 돌란X브루스 그린우드 케미 영상",
       },
     ],
   },
   {
     id: 30,
     poster: images.아이킬드마이마더,
-    title: "아이 킬드 마이 마더",
-    content: "",
-    cast: "",
+    title: "아이 킬드 마이 마더 19",
+    content:
+      "16살 사춘기 소년 후베르트는 엄마에 대한 불만으로 가득하다. 자신을 이해해주기는커녕 제멋대로 행동하는 엄마에게 진절머리가 난 후베르트는그의 연인 안토닌과 함께 자유로운 독립을 꿈꾼다. 하지만 엄마의 눈에 후베르트는 그저 철없는 사춘기 소년으로만 보일 뿐이다. 어느날 엄마는 상상치도 못했던 아들의 비밀을 전해 듣게 되고, 방황하던 후베르트는 결국 기숙학교에 강제 입학하게 되는데...",
+    cast: "자비에 돌란, 안느 도발, 수잔 클레망, 프랑수아 아노드, 닐스 슈나이더",
     director: "자비에 돌란",
-    genre: "",
+    genre: "드라마, 로맨스",
     category: ["공개예정"],
-    platforms: [],
+    platforms: [
+      {
+        src: images.왓챠,
+        link: "https://watcha.com/contents/m5X0NN5",
+      },
+    ],
     trailers: [
       {
-        url: "https://www.youtube.com/embed/",
-        title: "예고편",
+        url: "https://www.youtube.com/embed/RzbZIzmkw0M",
+        title: "메인 예고편",
+      },
+      {
+        url: "https://www.youtube.com/embed/JoiBzcY9yC4",
+        title: "티저 예고편",
       },
     ],
   },
@@ -707,49 +780,91 @@ const moviesData = [
     id: 31,
     poster: images.마티아스와막심,
     title: "마티아스와 막심",
-    content: "",
-    cast: "",
+    content:
+      "이해하고 싶어... 이게 우리야.\n단지 친구 사이의 ‘마티아스’와 ‘막심’이 뜻밖의 키스 이후 마주한 세상, 그 시작을 담은 이 순간 뜨겁게 빛나는 우리들의 드라마. 너와 나의 드라마는 지금부터.",
+    cast: "자비에 돌란, 가브리엘 달메이다 프라이타스, 해리스 디킨슨, 안느 도발, 피어-룩 펑크, 마릴린 카스통귀아이, 앙트완 필롱, 아디브 알카리데",
     director: "자비에 돌란",
-    genre: "",
+    genre: "드라마",
     category: ["공개예정"],
-    platforms: [],
+    platforms: [
+      {
+        src: images.왓챠,
+        link: "https://watcha.com/contents/mO07Z1e",
+      },
+    ],
     trailers: [
       {
-        url: "https://www.youtube.com/embed/",
-        title: "예고편",
+        url: "https://www.youtube.com/embed/_vUt_mxFndQ",
+        title: "메인 예고편",
       },
     ],
   },
   {
     id: 32,
     poster: images.마미,
-    title: "마미",
-    content: "",
-    cast: "",
+    title: "마미 15",
+    content:
+      "디안은 아들 스티브가 보호시설에서 쫓겨나자 홈스쿨링을 시작한다. 홀로 생계를 책임지며 아들을 돌보는 것에 지쳐가던 어느 날 디안은 이웃집 카일라를 만나고, 세 사람은 점차 서로를 의지하기 시작한다.",
+    cast: "안토니-올리버 피론, 안느 도발, 수잔 클레망, 이자벨 넬리스, 패트릭 휴어드, 알렉산더 고이트, 피에르-이브 카디날, 나탈리 하멜-로이, 빈센트 파파드",
     director: "자비에 돌란",
-    genre: "",
+    genre: "드라마",
     category: ["공개예정"],
-    platforms: [],
+    platforms: [
+      {
+        src: images.왓챠,
+        link: "https://watcha.com/contents/m5nQ3Q9",
+      },
+    ],
     trailers: [
       {
-        url: "https://www.youtube.com/embed/",
-        title: "예고편",
+        url: "https://www.youtube.com/embed/4_4P2L9wP6o",
+        title: "뮤직 티저 예고편",
+      },
+      {
+        url: "https://www.youtube.com/embed/1HqUvsaQQXw",
+        title: "주크박스 영상",
+      },
+      {
+        url: "https://www.youtube.com/embed/77R_y3PyMrk",
+        title: "감독판 예고편",
+      },
+      {
+        url: "https://www.youtube.com/embed/hlQLwVCoIkA",
+        title: "극찬 리뷰 예고편",
+      },
+      {
+        url: "https://www.youtube.com/embed/R0JyMCSp6s4",
+        title: "한국 관객들을 위한 자비에 돌란 감독 영상 메시지",
       },
     ],
   },
   {
     id: 33,
     poster: images.마스터,
-    title: "마스터",
-    content: "",
-    cast: "",
+    title: "마스터 19",
+    content:
+      "제 2차 세계대전이 끝난 후, 젊은이들은 각자 자신의 길을 찾아 떠나지만 프레디 퀠(호아킨 피닉스)은 여전히 방황하며 백화점의 사진기사로 살아가고 있다. 자신이 제조한 술에 의존하며 살아가고 있는 프레디는 술에 취해 유람선의 한 파티장에서 난동을 부리게 되고 다음날 그 자리에 있었던 랭케스터(필립 세이모어 호프만)를 만나게 된다. 몇 마디 나누지 않았음에도 서로에게 이끌리게 된 두 남자. 프레디는 인간의 심리를 연구하는 ‘코즈’ 연합회를 이끌고 있는 마스터, 랭케스터의 실험대상이자, 조력자이자, 친구로서 그의 가족들과 함께 머물게 된다. 하지만 프레디는 진정한 마스터라 믿었던 랭케스터 역시 자신과 다르지 않은 불완전한 인간임을 깨닫고, 랭케스터 역시 가족들로부터 프레디를 멀리하라는 경고를 받게 된다. 두 남자 사이에 균열은 점점 커져가고 아슬아슬한 관계는 점점 파국에 치닫는데...",
+    cast: "호아킨 피닉스, 필립 세이모어 호프만, 에이미 아담스, 로라 던, 엠버 칠더스, 라미 말렉, 제시 플레몬스, 케빈 J. 오코너, 크리스토퍼 에반 웰치, 메디슨 비티, 레나 엔드리",
     director: "폴 토마스 앤더슨",
-    genre: "",
+    genre: "드라마",
     category: ["공개예정"],
-    platforms: [],
+    platforms: [
+      {
+        src: images.왓챠,
+        link: "https://watcha.com/contents/m5rboD5",
+      },
+      {
+        src: images.웨이브,
+        link: "",
+      },
+      {
+        src: images.티빙,
+        link: "https://www.tving.com/contents/M000299737",
+      },
+    ],
     trailers: [
       {
-        url: "https://www.youtube.com/embed/",
+        url: "https://www.youtube.com/embed/mmnkUJcCmFw",
         title: "예고편",
       },
     ],
