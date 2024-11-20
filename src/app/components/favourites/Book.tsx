@@ -1,7 +1,12 @@
 import React from "react";
+import BookList from "./BookList";
 
 const Book = () => {
-  return <div>Book</div>;
+  return (
+    <div>
+      <BookList />
+    </div>
+  );
 };
 
 export default Book;

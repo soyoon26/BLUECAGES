@@ -4,7 +4,7 @@ import bluecages from "../../../public/bluecages.png";
 import greenpuzzle from "../../../public/greenpuzzle.png";
 import heart from "../../../public/heart.png";
 import firework from "../../../public/firework.png";
-import cherry from "../../../public/cherry.png";
+// import cherry from "../../../public/cherry.png";
 import luck from "../../../public/luck.png";
 import fish from "../../../public/fish.png";
 import mars from "../../../public/mars.png";

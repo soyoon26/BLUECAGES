@@ -1,6 +1,6 @@
 import React from "react";
-import profilecut from "../../../public/profilecut.webp";
-import Image from "next/image";
+// import profilecut from "../../../public/profilecut.webp";
+// import Image from "next/image";
 import ProfileImage from "../components/profile/ProfileImage";
 
 const page = () => {

@@ -5,7 +5,7 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import images from "@/app/assets/images";
+import { images } from "../../assets/images";
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const ProfileImage = () => {

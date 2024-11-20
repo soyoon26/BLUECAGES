@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MovieItem from "../common/MovieItem";
-import images from "@/app/assets/images";
+import { images } from "../../assets/images";
 
 const moviesData = [
   {

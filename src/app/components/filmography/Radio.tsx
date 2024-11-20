@@ -2,7 +2,7 @@
 
 import React from "react";
 import VideoItem from "../common/VideoItem";
-import images from "@/app/assets/images";
+import { images } from "../../assets/images";
 
 const videoData = [
   {

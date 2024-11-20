@@ -4,8 +4,8 @@ import Image, { StaticImageData } from "next/image";
 import TrailerList from "./TrailerList";
 
 interface Platform {
-  src: StaticImageData | string;
-  link: string;
+  src?: StaticImageData | string;
+  link?: string;
 }
 
 interface Trailer {
@@ -15,7 +15,7 @@ interface Trailer {
 
 interface MovieInfo {
   id: number;
-  poster: StaticImageData | string;
+  poster?: StaticImageData | string;
   title: string;
   content: string;
   cast: string;
@@ -36,28 +36,40 @@ const MovieItem: React.FC<{ movie: MovieInfo }> = ({ movie }) => {
 
   return (
     <div className="movie-item border-b p-4">
-      <section className=" p-4 text-center flex justify-between gap-10">
-        <Image src={movie.poster} alt={movie.title} width={200} height={450} />
+      <section className="p-4 text-center flex justify-between gap-10">
+        {movie.poster && (
+          <Image
+            src={movie.poster}
+            alt={movie.title}
+            width={200}
+            height={450}
+          />
+        )}
+
         <div className="w-full text-left">
           <div className="flex justify-between">
-            <h2 className="text-3xl font-bold ">{movie.title}</h2>
+            <h2 className="text-3xl font-bold">{movie.title}</h2>
             <div className="flex gap-2 items-center">
-              {movie.platforms.map((platform, index) => (
-                <a
-                  key={index}
-                  href={platform.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src={platform.src}
-                    alt="Platform icon"
-                    height={30}
-                    width={30}
-                    className="rounded"
-                  />
-                </a>
-              ))}
+              {movie.platforms.map(
+                (platform, index) =>
+                  platform.src &&
+                  platform.link && (
+                    <a
+                      key={index}
+                      href={platform.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        src={platform.src}
+                        alt="Platform icon"
+                        height={30}
+                        width={30}
+                        className="rounded"
+                      />
+                    </a>
+                  )
+              )}
             </div>
           </div>
           <p className="text-white">{movie.content}</p>

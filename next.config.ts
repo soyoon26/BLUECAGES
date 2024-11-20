@@ -1,7 +1,17 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    domains: ["image.aladin.co.kr", "file.koreafilm.or.kr"], // 추가된 도메인
+  },
+  async rewrites() {
+    return [
+      {
+        source: "/api/proxy",
+        destination: "/api/proxy",
+      },
+    ];
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
