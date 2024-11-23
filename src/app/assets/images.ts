@@ -12,6 +12,7 @@ export const images = {
   웨이브: "/icons/wavve.png",
   시리즈온: "/icons/시리즈온.png",
   유플러스: "/icons/uplus.webp",
+
   댓글부대: "/movie_poster/댓글부대p.webp",
   정말먼곳: "/movie_poster/정말먼곳p.webp",
   청설: "/movie_poster/청설p.webp",

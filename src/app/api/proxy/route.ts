@@ -1,3 +1,4 @@
+// /api/proxy.ts
 import { NextResponse } from "next/server";
 
 export async function GET(request: Request) {
@@ -25,34 +26,20 @@ export async function GET(request: Request) {
       query
     )}&QueryType=Title&MaxResults=1&SearchTarget=Book&output=js`;
 
-    console.log(`Requesting Aladin API with URL: ${apiUrl}`);
-
     const response = await fetch(apiUrl);
     const text = await response.text();
-
-    console.log("Raw response from Aladin API:", text);
 
     const sanitizedText = text
       .trim()
       .replace(/^[^\{]+/, "")
       .replace(/[^\}]+$/, "");
 
-    console.log("Sanitized response:", sanitizedText);
-
     let data;
     try {
       data = JSON.parse(sanitizedText);
     } catch (error) {
-      console.error(
-        "Failed to parse JSON from Aladin API. Raw sanitized response:",
-        sanitizedText,
-        error
-      );
       return NextResponse.json(
-        {
-          error: "Failed to parse JSON response from Aladin API",
-          rawResponse: sanitizedText,
-        },
+        { error: "Failed to parse JSON response", rawResponse: sanitizedText },
         { status: 500 }
       );
     }
@@ -66,7 +53,6 @@ export async function GET(request: Request) {
 
     return NextResponse.json(data);
   } catch (error) {
-    console.error("Unexpected error in /api/proxy:", error);
     return NextResponse.json(
       { error: "Internal Server Error" },
       { status: 500 }

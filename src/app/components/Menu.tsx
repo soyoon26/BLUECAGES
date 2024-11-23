@@ -20,7 +20,7 @@ const menuItems: MenuItem[] = [
   { src: greenpuzzle, alt: "초록퍼즐", text: "프로필", href: "/profile" },
   { src: mars, alt: "마스", text: "필모그래피", href: "/filmography" },
   { src: heart, alt: "하트", text: "좋아하는", href: "/favourites" },
-  { src: firework, alt: "불꽃놀이", text: "기타..", href: "/others" },
+  { src: firework, alt: "불꽃놀이", text: "말들", href: "/talk" },
   { src: fish, alt: "금붕어", text: "기타..", href: "/others" },
   { src: luck, alt: "네잎클로버", text: "해시태그", href: "/others" },
 ];

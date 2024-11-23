@@ -13,6 +13,19 @@ const BookList: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
+  interface BookResponse {
+    title: string;
+  }
+
+  interface ApiResponse {
+    item: {
+      title: string;
+      author: string;
+      cover?: string;
+      priceSales?: number;
+    }[];
+  }
+
   const fetchBooks = async () => {
     try {
       const response = await fetch("/books.json");
@@ -20,56 +33,44 @@ const BookList: React.FC = () => {
         throw new Error(`Failed to fetch books.json: ${response.statusText}`);
       }
 
-      const bookTitles = await response.json();
-      console.log("Book titles loaded from /books.json:", bookTitles);
+      const bookTitles: BookResponse[] = await response.json();
 
-      const fetchPromises = bookTitles.map(async (book: { title: string }) => {
-        const apiUrl = `/api/proxy?query=${encodeURIComponent(book.title)}`;
-        console.log(`Fetching data for "${book.title}" with URL: ${apiUrl}`);
+      const uniqueTitles = [...new Set(bookTitles.map((book) => book.title))];
+
+      const fetchedBooks: Book[] = [];
+      for (const title of uniqueTitles) {
+        const apiUrl = `/api/proxy?query=${encodeURIComponent(title)}`;
         try {
           const response = await fetch(apiUrl);
-
           if (!response.ok) {
             if (response.status === 404) {
-              console.warn(`결과없음 "${book.title}"`);
-              return null;
+              console.warn(`No result found for "${title}"`);
+              continue;
             }
             throw new Error(`Failed to fetch API: ${response.statusText}`);
           }
 
-          const data = await response.json();
-          console.log(`책이름 "${book.title}":`, data);
+          const data: ApiResponse = await response.json();
 
           if (data.item && data.item.length > 0) {
             const bookData = data.item[0];
-            return {
+            fetchedBooks.push({
               title: bookData.title,
               author: bookData.author,
               cover: bookData.cover,
               price: bookData.priceSales,
-            } as Book;
-          } else {
-            console.warn(`결과없음2  "${book.title}"`);
+            });
           }
         } catch (error) {
-          console.error(`에러남 "${book.title}":`, error);
+          console.error(`Error fetching "${title}":`, error);
         }
-        return null;
-      });
-
-      const results = await Promise.all(fetchPromises);
-      console.log("All book data fetched:", results);
-
-      const filteredBooks = results.filter(
-        (book): book is Book => book !== null
-      );
-
-      if (filteredBooks.length === 0) {
-        console.warn("No valid books found after filtering.");
-        setErrorMessage("No books found.");
       }
 
-      setBooks(filteredBooks);
+      if (fetchedBooks.length === 0) {
+        setErrorMessage("No books found.");
+      } else {
+        setBooks(fetchedBooks);
+      }
     } catch (error) {
       console.error("Error loading books:", error);
       setErrorMessage("An error occurred while loading books.");
