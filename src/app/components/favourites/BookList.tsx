@@ -83,7 +83,14 @@ const BookList: React.FC = () => {
     fetchBooks();
   }, []);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-screen flex-col">
+        <div className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+        <p className="mt-12">잠시만 기다려 주세요 !</p>
+      </div>
+    );
+  }
 
   if (errorMessage) return <p>{errorMessage}</p>;
 
