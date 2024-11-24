@@ -11,7 +11,7 @@ const page = () => {
         <div className="flex-col">
           <div className="flex ">
             <div className="w-[100px] profile-h">이름</div>
-            <div className="profile-h">홍경(洪炅)</div>
+            <div className="profile-h">홍경(紅炅)</div>
           </div>
           <div className="flex ">
             <div className="w-[100px] profile-h">인스타그램</div>

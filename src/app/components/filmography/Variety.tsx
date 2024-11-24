@@ -1,10 +1,12 @@
 import React from "react";
 import ComingSoon from "../common/ComingSoon";
 
-export const Photo = () => {
+const Variety = () => {
   return (
     <div>
       <ComingSoon />
     </div>
   );
 };
+
+export default Variety;

@@ -4,14 +4,13 @@ const Article = () => {
   return (
     <div className=" min-h-screen p-8">
       <header className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-blue-900">
+        <h1 className="text-6xl font-bold font-sinbi  text-blue-900">
           좋아하는 인터뷰 모음
         </h1>
         <p className="text-lg text-gray-600 mt-2">홍경 배우가 전하는 이야기</p>
       </header>
 
       <div className="space-y-6 max-w-4xl mx-auto">
-        {/* Article 1 */}
         <article className="bg-white shadow-md rounded-lg p-6">
           <h2 className="text-xl font-semibold text-gray-800 mb-4">
             사랑의 마음이 피어나는 순간은 언제인가요?
@@ -26,7 +25,6 @@ const Article = () => {
           </p>
         </article>
 
-        {/* Article 2 */}
         <article className="bg-white shadow-md rounded-lg p-6">
           <h2 className="text-xl font-semibold text-gray-800 mb-4">
             지금 들여다보고 있는 것은 무엇인가요?
@@ -49,7 +47,6 @@ const Article = () => {
           </p>
         </article>
 
-        {/* Article 3 */}
         <article className="bg-white shadow-md rounded-lg p-6">
           <h2 className="text-xl font-semibold text-gray-800 mb-4">
             다른 사람들한테 물어보느라 정작 홍경 배우는 대답하지 않았잖아요.
@@ -65,10 +62,12 @@ const Article = () => {
             전치만은 아니고 보고 나서 여운이 꽤 길더라고요. 또 얘기하게 된다면,
             어린 애스터 감독 영화도 좋아해요. <strong>&lt;머니볼&gt;</strong>과{" "}
             <strong>&lt;폭스캐처&gt;</strong>를 만든 베넷 밀러 감독의 영화도 꼭
-            챙겨 보는 편이고요. <br />
-            <h2 className="text-xl mt-2 font-semibold text-gray-800 mb-4">
-              영화 취향이 꽤 명확하네요.
-            </h2>
+            챙겨 보는 편이고요.{" "}
+          </p>
+          <h2 className="text-xl mt-2 font-semibold text-gray-800 mb-4">
+            영화 취향이 꽤 명확하네요.
+          </h2>
+          <p className="text-gray-700">
             그러려고 노력해요. 얼마 전에 든 생각인데, 유년기에 보고 먹고 듣는
             것이 20대 때 나오는 것 같더라고요. 무의식적으로 혹은 본능적으로
             취향적 중심에서 벗어나는 것이 있지 않나 싶어요. 그런데 20대가 되고
@@ -80,7 +79,6 @@ const Article = () => {
           </p>
         </article>
 
-        {/* Article 4 */}
         <article className="bg-white shadow-md rounded-lg p-6">
           <h2 className="text-xl font-semibold text-gray-800 mb-4">
             좋은 예술과 영화관의 의미
@@ -98,7 +96,6 @@ const Article = () => {
           </p>
         </article>
 
-        {/* Article 5 */}
         <article className="bg-white shadow-md rounded-lg p-6">
           <h2 className="text-xl font-semibold text-gray-800 mb-4">
             고등학교 때 영화를 너무 좋아해 연기를 하게 됐다고요.

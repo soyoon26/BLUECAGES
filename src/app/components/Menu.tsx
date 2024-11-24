@@ -8,6 +8,7 @@ import firework from "../../../public/firework.png";
 import luck from "../../../public/luck.png";
 import fish from "../../../public/fish.png";
 import mars from "../../../public/mars.png";
+import Link from "next/link";
 
 type MenuItem = {
   src: StaticImageData;
@@ -21,14 +22,21 @@ const menuItems: MenuItem[] = [
   { src: mars, alt: "마스", text: "필모그래피", href: "/filmography" },
   { src: heart, alt: "하트", text: "좋아하는", href: "/favourites" },
   { src: firework, alt: "불꽃놀이", text: "말들", href: "/talk" },
-  { src: fish, alt: "금붕어", text: "기타..", href: "/others" },
-  { src: luck, alt: "네잎클로버", text: "해시태그", href: "/others" },
+  { src: fish, alt: "금붕어", text: "수상", href: "/award" },
+  { src: luck, alt: "네잎클로버", text: "bluecages", href: "/bluecages" },
 ];
 
 const Menu: React.FC = () => {
   return (
     <div className="mt-10 w-screen font-sinbi flex items-center flex-col ">
-      <Image src={bluecages} alt="블루케이지" width={500} />
+      <Link href="/">
+        <Image
+          src={bluecages}
+          alt="블루케이지"
+          width={500}
+          className="cursor-pointer"
+        />
+      </Link>
       <section className="flex mt-10  w-5/6 border-2 rounded-lg px-4   border-white items-center justify-around border-r-red-400">
         {menuItems.map((item, index) => (
           <article key={index}>

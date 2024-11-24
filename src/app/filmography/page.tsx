@@ -16,6 +16,9 @@ import {
   TvIcon,
   VideoCameraIcon,
 } from "@heroicons/react/24/outline";
+import Drama from "../components/filmography/Drama";
+import { Photo } from "../components/filmography/Photo";
+import Variety from "../components/filmography/Variety";
 
 const Page = () => {
   const { selectedCategory } = useCategoryStore();
@@ -40,6 +43,12 @@ const Page = () => {
         return <Ad />;
       case "라디오":
         return <Radio />;
+      case "드라마":
+        return <Drama />;
+      case "화보":
+        return <Photo />;
+      case "예능":
+        return <Variety />;
       default:
         return <div className="text-white p-4">{selectedCategory}</div>;
     }
