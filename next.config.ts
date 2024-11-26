@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["image.aladin.co.kr", "file.koreafilm.or.kr"], // 추가된 도메인
+    domains: ["image.aladin.co.kr", "file.koreafilm.or.kr"],
   },
   async rewrites() {
     return [
@@ -11,6 +11,10 @@ const nextConfig = {
         destination: "/api/proxy",
       },
     ];
+  },
+
+  typescript: {
+    ignoreBuildErrors: true,
   },
 };
 

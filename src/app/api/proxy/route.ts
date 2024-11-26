@@ -1,4 +1,3 @@
-// /api/proxy.ts
 import { NextResponse } from "next/server";
 
 export async function GET(request: Request) {
@@ -37,7 +36,8 @@ export async function GET(request: Request) {
     let data;
     try {
       data = JSON.parse(sanitizedText);
-    } catch (error) {
+    } catch (_error) {
+      console.error(_error);
       return NextResponse.json(
         { error: "Failed to parse JSON response", rawResponse: sanitizedText },
         { status: 500 }
@@ -52,7 +52,8 @@ export async function GET(request: Request) {
     }
 
     return NextResponse.json(data);
-  } catch (error) {
+  } catch (_error) {
+    console.error(_error);
     return NextResponse.json(
       { error: "Internal Server Error" },
       { status: 500 }
