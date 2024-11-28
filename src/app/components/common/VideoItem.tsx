@@ -31,7 +31,22 @@ const VideoItem: React.FC<VideoItemProps> = ({ video }) => {
         onClick={toggleVisibility}
         className="cursor-pointer p-4 text-center flex justify-between gap-10"
       >
-        <Image src={video.src} alt={video.alt} width={300} height={150} />
+        {typeof video.src === "string" ? (
+          <img
+            src={video.src}
+            alt={video.alt}
+            className="w-[300px] h-[150px] rounded-lg"
+          />
+        ) : (
+          <Image
+            src={video.src}
+            alt={video.alt}
+            width={300}
+            height={150}
+            className="rounded-lg"
+          />
+        )}
+
         <div className="flex justify-between w-full">
           <article>
             <div className="mb-4 mt-2">
