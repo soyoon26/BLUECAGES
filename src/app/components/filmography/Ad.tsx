@@ -25,16 +25,7 @@ const videoData = [
     content: "2016년",
     videoUrls: ["https://www.youtube.com/embed/_x0Ah894n98"],
   },
-  // {
-  //   id: 3,
-  //   src: "https://img.youtube.com/vi/PBOM_SAtPcs/hqdefault.jpg",
-  //   alt: "mv3",
-  //   title: "[데상트]𝗟𝗜𝗩𝗘 𝗢𝗡 𝗧𝗛𝗘 𝗘𝗗𝗚𝗘, 𝗘𝗗𝗚𝗘 𝗖𝗢𝗨𝗥𝗧_배우 홍경",
-  //   youtuber_src: images.데상트,
-  //   youtuber: "데상트 DESCENTE",
-  //   content: "2024년 1월 26일",
-  //   videoUrls: ["https://www.youtube.com/embed/PBOM_SAtPcs"],
-  // },
+
   {
     id: 4,
     src: "https://img.youtube.com/vi/2DWSSu3wdBw/hqdefault.jpg",
